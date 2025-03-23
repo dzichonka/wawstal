@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WawStal</title>
+    <meta
+      name="description"
+      content="WawStal - firma ślusarska, która łączy solidność z nowoczesnym designem"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="modal modal-closed">
+      <div class="modal_window">
+        <div class="modal_wrapper">
+          <img
+            class="modal_img"
+            src="./assets/img/menu-deserts/dessert-1.png"
+            alt="Marble cheesecake"
+          />
+          <div class="modal_content">
+            <div class="modal_header">
+              <h3 class="modal_title">Marble cheesecake</h3>
+              <div class="modal_descr">
+                Philadelphia cheese with lemon zest on a light sponge cake and
+                red currant jam
+              </div>
+            </div>
+
+            <div class="modal_size">
+              <div class="modal_size_descr">Size</div>
+              <div class="tab_buttons modal_size-btns">
+                <div
+                  class="modal_size-btn tab-button base-active active"
+                  data-size="0"
+                >
+                  <div class="tab-button_img">S</div>
+                  <div class="tab-button_descr modal_size-dynamic">50 g</div>
+                </div>
+
+                <div class="modal_size-btn tab-button" data-size="0.5">
+                  <div class="tab-button_img">M</div>
+                  <div class="tab-button_descr modal_size-dynamic">100 g</div>
+                </div>
+
+                <div class="modal_size-btn tab-button" data-size="1">
+                  <div class="tab-button_img">L</div>
+                  <div class="tab-button_descr modal_size-dynamic">200 g</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal_add">
+              <div class="modal_size_descr">Additives</div>
+              <div class="tab_buttons modal_add-btns">
+                <div class="modal_add-btn tab-button" data-add="0.5">
+                  <div class="tab-button_img">1</div>
+                  <div class="tab-button_descr modal_add-dynamic">Berries</div>
+                </div>
+
+                <div class="modal_add-btn tab-button" data-add="0.5">
+                  <div class="tab-button_img">2</div>
+                  <div class="tab-button_descr modal_add-dynamic">Nuts</div>
+                </div>
+
+                <div class="modal_add-btn tab-button" data-add="0.5">
+                  <div class="tab-button_img">3</div>
+                  <div class="tab-button_descr modal_add-dynamic">Jam</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal_price">
+              <div class="modal_price_descr">Total:</div>
+              <div class="modal_price_sum">$3.50</div>
+            </div>
+            <div class="modal_alert">
+              <div class="modal_alert_svg">
+                <svg
+                  width="16"
+                  height="16"
+                  viewbox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_268_11729)">
+                    <path
+                      d="M8 7.66663V11"
+                      stroke="#403F3D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 5.00667L8.00667 4.99926"
+                      stroke="#403F3D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z"
+                      stroke="#403F3D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clippath id="clip0_268_11729">
+                      <rect width="16" height="16" fill="white" />
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="modal_alert_descr">
+                The cost is not final. Download our mobile app to see the final
+                price and place your order. Earn loyalty points and enjoy your
+                favorite coffee with up to 20% discount.
+              </div>
+            </div>
+
+            <div class="modal_close">Close</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <div class="header_wrapper">
+          <div class="header_logo-hamburger-wrapper">
+            <a class="header_logo" href="index.html"><h1>WawStal</h1></a>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header_nav">
+            <ul class="header_list">
+              <!-- <li class="header_item">
+                <a href="#favorites" class="nav_link link-text"
+                  >Favorite coffee</a
+                >
+              </li> -->
+              <li class="header_item">
+                <a href="/index.html#about" class="nav_link link-text"
+                  >O firmie</a
+                >
+              </li>
+              <!-- <li class="header_item">
+                <a href="#mobile" class="nav_link link-text">Mobile app</a>
+              </li> -->
+              <li class="header_item">
+                <a href="#footer" class="nav_link link-text">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header_menu-link menu-link">
+            <a href="#" class="menu-link_link link-text">
+              <div class="menu-link_title link-text">Proekty</div>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="menu" id="menu">
+        <h2 class="menu_title">
+          Strona jest w budowie. Aby zobaczyć nasze realizacje,
+          <span>odwiedź nasze media</span> społecznościowe
+        </h2>
+        <!-- <div class="menu_tab tab">
+          <div class="tab_buttons">
+            <div class="tab-btn tab-button active" data-category="coffee">
+              <div class="tab-button_img">
+                <img src="assets/icons/coffee-tab.png" alt="coffee" />
+              </div>
+              <div class="tab-button_descr">Coffee</div>
+            </div>
+
+            <div class="tab-btn tab-button" data-category="tea">
+              <div class="tab-button_img">
+                <img src="assets/icons/tea-tab.png" alt="tea" />
+              </div>
+              <div class="tab-button_descr">Tea</div>
+            </div>
+
+            <div class="tab-btn tab-button" data-category="desert">
+              <div class="tab-button_img">
+                <img src="assets/icons/desert-tab.png" alt="desert" />
+              </div>
+              <div class="tab-button_descr">Desert</div>
+            </div>
+          </div>
+
+          <div class="tab_items">
+            <div class="tab_content">
+
+            </div>
+          </div>
+
+          <div class="tab_refresh">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewbox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                stroke="#403F3D"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3"
+                stroke="#403F3D"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div> -->
+      </section>
+
+      <footer class="footer" id="footer">
+        <div class="footer_wrapper">
+          <div class="footer_column footer_column__left">
+            <h2 class="footer_title">
+              Masz pytania lub chcesz nawiązać współpracę?
+              <span>Skontaktuj się z nami!</span>
+            </h2>
+            <div class="footer_socials">
+              <a
+                href="https://www.tiktok.com/@sergej.wasilewicz"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-tiktok fa-xl"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61550951706924&locale=pl_PL"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-facebook fa-xl"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/wawstal/"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer_column footer_column__right">
+            <div class="footer_contact-us">Contact us</div>
+            <div class="footer_contacts">
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/WZBPTGcUYr5wQaTN7"
+                class="footer_location"
+              >
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <span>Hiacyntowa, 13, Warszawa</span></a
+              >
+
+              <a target="_blank" href="tel:+48516536514" class="footer_tel">
+                <i class="fa-solid fa-phone fa-xl"></i>
+                <span>+48 516 536 514</span></a
+              >
+
+              <a
+                target="_blank"
+                href="mailto:wawstal@gmail.com"
+                class="footer_email"
+              >
+                <i class="fa-solid fa-envelope fa-xl"></i>
+                <span>wawstal@gmail.com</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
+  </body>
+</html>
