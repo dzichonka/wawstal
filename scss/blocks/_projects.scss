@@ -1,5 +1,6 @@
 .modal {
   z-index: 99;
+
   background: $background-backdrop;
   position: fixed;
   top: 0;
@@ -22,21 +23,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    width: 800px;
+    width: 80%;
     border-radius: 40px;
-    padding: 16px;
-    background: $text-light;
+    padding: 1px;
+    background: $background-body;
   }
 
   &_wrapper {
     display: flex;
+    //flex-direction: column;
+    border-radius: 40px;
     gap: 20px;
+    background: transparent;
   }
 
   &_img {
     border-radius: 40px;
-    width: 310px;
-    height: 310px;
+    width: 50%;
     object-fit: cover;
   }
 
@@ -44,51 +47,26 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
-
+    border-radius: 40px;
+    background: transparent;
+  }
+  &_header {
+    background: transparent;
   }
 
   &_title {
+    background: transparent;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.25;
   }
 
   &_descr {
+    background: transparent;
     margin-top: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  &_size,
-  &_add {
-    .tab_buttons {
-      justify-content: start;
-    }
-  }
-
-  &_price {
-    font-family: $font-family;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &_alert {
-    border-top: 1px solid $border-light;
-    padding: 12px 0;
-    font-family: $font-family;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 1.4;
-    display: flex;
-    gap: 8px;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
   }
 
   &_close {
@@ -108,7 +86,6 @@
       background: $background-container;
       color: $text-light;
       cursor: pointer;
-
     }
   }
 }
@@ -120,7 +97,7 @@
   }
 }
 
-.menu {
+.projects {
   margin-top: 20px;
 
   &_title {
@@ -212,11 +189,6 @@
     gap: 12px;
     color: $text-dark;
     background: transparent;
-
-    .menu-card_price {
-      margin-top: auto;
-    }
-
   }
 
   &_title {
@@ -229,12 +201,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-  }
-
-  &_price {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 125%;
   }
 
   cursor: pointer;
@@ -250,7 +216,7 @@
 
 .tab-button {
   display: flex;
-  padding: 8px 16px 8px 8px;
+  padding: 16px 24px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -266,8 +232,8 @@
     padding: 3px 7px;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
-    background: $border-light;
+    border-radius: 40px;
+    //background: $border-light;
 
     img {
       width: 16px;

@@ -2,11 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>WawStal</title>
+    <meta name="title" content="WawStal" />
     <meta
       name="description"
       content="WawStal - firma ślusarska, która łączy solidność z nowoczesnym designem"
+    />
+
+    <meta property="og:type" content="https://wawstal.pl" />
+    <meta property="og:url" content="https://wawstal.pl" />
+    <meta property="og:title" content="WawStal" />
+    <meta
+      property="og:description"
+      content="WawStal - firma ślusarska, która łączy solidność z nowoczesnym designem"
+    />
+    <meta
+      property="og:image"
+      content="assets/favicon/android-chrome-512x512.png"
     />
     <link
       rel="apple-touch-icon"
@@ -53,97 +66,6 @@
                 red currant jam
               </div>
             </div>
-
-            <div class="modal_size">
-              <div class="modal_size_descr">Size</div>
-              <div class="tab_buttons modal_size-btns">
-                <div
-                  class="modal_size-btn tab-button base-active active"
-                  data-size="0"
-                >
-                  <div class="tab-button_img">S</div>
-                  <div class="tab-button_descr modal_size-dynamic">50 g</div>
-                </div>
-
-                <div class="modal_size-btn tab-button" data-size="0.5">
-                  <div class="tab-button_img">M</div>
-                  <div class="tab-button_descr modal_size-dynamic">100 g</div>
-                </div>
-
-                <div class="modal_size-btn tab-button" data-size="1">
-                  <div class="tab-button_img">L</div>
-                  <div class="tab-button_descr modal_size-dynamic">200 g</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="modal_add">
-              <div class="modal_size_descr">Additives</div>
-              <div class="tab_buttons modal_add-btns">
-                <div class="modal_add-btn tab-button" data-add="0.5">
-                  <div class="tab-button_img">1</div>
-                  <div class="tab-button_descr modal_add-dynamic">Berries</div>
-                </div>
-
-                <div class="modal_add-btn tab-button" data-add="0.5">
-                  <div class="tab-button_img">2</div>
-                  <div class="tab-button_descr modal_add-dynamic">Nuts</div>
-                </div>
-
-                <div class="modal_add-btn tab-button" data-add="0.5">
-                  <div class="tab-button_img">3</div>
-                  <div class="tab-button_descr modal_add-dynamic">Jam</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="modal_price">
-              <div class="modal_price_descr">Total:</div>
-              <div class="modal_price_sum">$3.50</div>
-            </div>
-            <div class="modal_alert">
-              <div class="modal_alert_svg">
-                <svg
-                  width="16"
-                  height="16"
-                  viewbox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_268_11729)">
-                    <path
-                      d="M8 7.66663V11"
-                      stroke="#403F3D"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 5.00667L8.00667 4.99926"
-                      stroke="#403F3D"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z"
-                      stroke="#403F3D"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clippath id="clip0_268_11729">
-                      <rect width="16" height="16" fill="white" />
-                    </clippath>
-                  </defs>
-                </svg>
-              </div>
-              <div class="modal_alert_descr">
-                The cost is not final. Download our mobile app to see the final
-                price and place your order. Earn loyalty points and enjoy your
-                favorite coffee with up to 20% discount.
-              </div>
-            </div>
-
             <div class="modal_close">Close</div>
           </div>
         </div>
@@ -188,39 +110,28 @@
         </div>
       </header>
 
-      <section class="menu" id="menu">
-        <h2 class="menu_title">
+      <section class="projects" id="projects">
+        <!-- <h2 class="menu_title">
           Strona jest w budowie. Aby zobaczyć nasze realizacje,
           <span>odwiedź nasze media</span> społecznościowe
-        </h2>
-        <!-- <div class="menu_tab tab">
+        </h2> -->
+        <div class="projects_tab tab">
           <div class="tab_buttons">
             <div class="tab-btn tab-button active" data-category="coffee">
-              <div class="tab-button_img">
-                <img src="assets/icons/coffee-tab.png" alt="coffee" />
-              </div>
-              <div class="tab-button_descr">Coffee</div>
+              <div class="tab-button_descr">Balustrady</div>
             </div>
 
             <div class="tab-btn tab-button" data-category="tea">
-              <div class="tab-button_img">
-                <img src="assets/icons/tea-tab.png" alt="tea" />
-              </div>
-              <div class="tab-button_descr">Tea</div>
+              <div class="tab-button_descr">Ogrodzenia i bramy</div>
             </div>
 
             <div class="tab-btn tab-button" data-category="desert">
-              <div class="tab-button_img">
-                <img src="assets/icons/desert-tab.png" alt="desert" />
-              </div>
-              <div class="tab-button_descr">Desert</div>
+              <div class="tab-button_descr">Lofty</div>
             </div>
           </div>
 
           <div class="tab_items">
-            <div class="tab_content">
-
-            </div>
+            <div class="tab_content"></div>
           </div>
 
           <div class="tab_refresh">
@@ -245,7 +156,7 @@
               />
             </svg>
           </div>
-        </div> -->
+        </div>
       </section>
 
       <footer class="footer" id="footer">
@@ -307,6 +218,6 @@
       </footer>
     </div>
     <script src="./js/script.js"></script>
-    <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

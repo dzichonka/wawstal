@@ -14,7 +14,7 @@
   }
 
   &_column {
-    min-width: 380px;
+    //min-width: 380px;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -83,8 +83,14 @@
       border-bottom: 2px solid transparent;
       transition: 0.8s all;
 
-      &:hover span {
-        border-bottom: 2px solid $text-accent;
+      span {
+        border-bottom: 2px solid transparent;
+        transition: 0.8s all;
+        &:hover {
+          @media (hover: hover) {
+            border-bottom: 2px solid $text-accent;
+          }
+        }
       }
     }
   }
