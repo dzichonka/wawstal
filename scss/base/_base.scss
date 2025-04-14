@@ -2,13 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: $background-body;
+  //background-color: $background-body;
   font-family: "Inter", sans-serif;
   font-feature-settings: "clig" off, "liga" off;
   font-style: normal;
 }
 
 body {
+  background-color: $background-body;
   width: 100%;
   overflow-x: hidden;
 }
