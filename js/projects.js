@@ -52,6 +52,10 @@ function handleRefresh() {
     currentIndex = 0;
   }
   displayItems();
+  const section = document.getElementById("header");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function handleTab(event) {
@@ -81,7 +85,6 @@ function openModal(item) {
   document
     .querySelectorAll(".modal_add-btn.active")
     .forEach((elem) => elem.classList.remove("active"));
-  //document.querySelector(".base-active").classList.add("active");
   modalImg.src = item.img;
   modalImg.alt = item.title;
   modalTitle.textContent = item.title;
