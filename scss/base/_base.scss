@@ -2,8 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
-  //background-color: $background-body;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-feature-settings: "clig" off, "liga" off;
   font-style: normal;
 }
@@ -26,30 +25,26 @@ section {
 
 h2 {
   color: $text-dark;
-  font-feature-settings: "clig" off, "liga" off;
-
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 400;
   line-height: 125%;
 
   span {
     color: $text-accent;
-    font-style: italic;
+    font-family: $second-family;
   }
 }
 h3 {
   color: $text-dark;
-  font-feature-settings: "clig" off, "liga" off;
-
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 200;
   line-height: 125%;
   p {
     font-size: 20px;
   }
   span {
     color: $text-accent;
-    font-style: italic;
+    font-family: $second-family;
   }
 }
 

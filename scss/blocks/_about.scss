@@ -1,13 +1,12 @@
 .about {
   &_title {
-    font-size: 59.9px;
+    font-size: 40px;
   }
 }
 .gallery {
   margin-top: 40px;
   display: flex;
   gap: 40px;
-  //flex-wrap: wrap;
   justify-content: center;
 
   &_column {
@@ -20,7 +19,7 @@
     filter: brightness(90%) contrast(90%);
     max-width: 660px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;

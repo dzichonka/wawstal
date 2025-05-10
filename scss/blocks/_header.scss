@@ -11,7 +11,6 @@
     min-width: 130px;
     text-align: end;
     font-size: 42px;
-    font-style: italic;
   }
 
   &_wrapper {
@@ -69,7 +68,6 @@
 
 .link-text {
   color: $text-dark;
-  font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

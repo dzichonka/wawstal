@@ -1,6 +1,5 @@
 .modal {
   z-index: 99;
-
   background: $background-backdrop;
   position: fixed;
   top: 0;
@@ -23,48 +22,39 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    width: 80%;
-    border-radius: 40px;
-    padding: 1px;
+    border-radius: 4px;
+    padding: 20px;
     background: $background-body;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &_wrapper {
-    height: 90vh;
-    width: 90vw;
-    display: flex;
-    //flex-direction: column;
-    border-radius: 40px;
-    gap: 20px;
-    //background: transparent;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
   }
 
   &_img {
-    border-radius: 40px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
+    object-fit: contain;
+    border-radius: 4px;
   }
 
   &_content {
-    padding: 20px 0;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    border-radius: 40px;
     justify-content: space-between;
     align-items: center;
-    //background: transparent;
   }
 
   &_title {
     display: none;
-    // text-align: center;
-    // background: transparent;
-    // font-weight: 600;
-    // font-size: 24px;
-    // line-height: 1.25;
   }
 
   &_descr {
@@ -82,11 +72,10 @@
     justify-content: center;
     flex-direction: row;
     border: 1px solid $background-container;
-    border-radius: 100px;
+    border-radius: 5px;
     padding: 10px 20px;
     height: 44px;
     transition: all 0.5s ease;
-    //background: $text-light;
 
     &:hover {
       background: $background-container;
@@ -117,7 +106,7 @@
 
     span {
       color: $text-accent;
-      font-style: italic;
+      font-family: $second-family;
     }
   }
 }
@@ -161,17 +150,15 @@
 
 .menu-card {
   width: 310px;
-  //height: 400px;
-  border-radius: 40px;
+  border-radius: 4px;
   border: 1px solid $border-light;
 
   &_img {
-    //object-fit: cover;
     width: 100%;
     height: 310px;
     flex-shrink: 0;
     overflow: hidden;
-    border-radius: 40px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,13 +180,6 @@
   }
 
   &_title {
-    // text-align: center;
-    // padding: 20px;
-    // gap: 12px;
-    // color: $text-dark;
-    // font-size: 24px;
-    // font-weight: 600;
-    // line-height: 125%;
     display: none;
   }
 
@@ -223,7 +203,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 100px;
+  border-radius: 5px;
   border: 1px solid $border-light;
   cursor: pointer;
   transition: all 0.5s;
@@ -231,7 +211,7 @@
   &_descr {
     color: $text-dark;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 150%;
     background: transparent;
   }
