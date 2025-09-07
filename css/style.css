@@ -33,7 +33,7 @@ h2 {
   line-height: 125%;
 }
 h2 span {
-  color: #c70017;
+  color: #c70000;
   font-family: "Architects Daughter", cursive;
 }
 
@@ -47,7 +47,7 @@ h3 p {
   font-size: 20px;
 }
 h3 span {
-  color: #c70017;
+  color: #c70000;
   font-family: "Architects Daughter", cursive;
 }
 
@@ -80,18 +80,33 @@ h3 span {
 }
 
 .header {
-  height: 60px;
-  margin: 20px 0;
+  height: 120px;
+  margin: 0;
 }
 .header_logo {
-  text-decoration: none;
-  color: #c70017;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 .header h1 {
-  font-family: "Architects Daughter", cursive;
-  min-width: 130px;
+  margin: 0;
+  margin-top: 10px;
+  width: 150px;
+  height: 100%;
   text-align: end;
   font-size: 42px;
+  background-image: url("../assets/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
 }
 .header_wrapper {
   display: -webkit-box;
@@ -139,7 +154,7 @@ h3 span {
 }
 @media (hover: hover) {
   .header_item:hover {
-    border-bottom: 2px solid #c70017;
+    border-bottom: 2px solid #c70000;
   }
 }
 .header .menu-link_link {
@@ -155,7 +170,7 @@ h3 span {
   transition: 0.5s all;
 }
 .header .menu-link_link:hover {
-  border-bottom: 2px solid #c70017;
+  border-bottom: 2px solid #c70000;
 }
 
 .link-text {
@@ -225,7 +240,7 @@ h3 span {
   line-height: 105%;
 }
 .enjoy_title span {
-  color: #c70017;
+  color: #c70000;
   font-family: "Architects Daughter", cursive;
 }
 .enjoy_descr {
@@ -253,7 +268,7 @@ h3 span {
   transition: all 0.5s ease-out;
 }
 .enjoy_button:hover {
-  color: #c70017;
+  color: #c70000;
 }
 
 .about_title {
@@ -427,7 +442,7 @@ h3 span {
       -ms-flex-direction: row;
           flex-direction: row;
   background: transparent;
-  color: #c70017;
+  color: #c70000;
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 10px 20px;
@@ -459,7 +474,7 @@ h3 span {
   line-height: 125%;
 }
 .projects_title span {
-  color: #c70017;
+  color: #c70000;
   font-family: "Architects Daughter", cursive;
 }
 
@@ -664,7 +679,7 @@ h3 span {
   color: #c9d7e1;
 }
 .footer_title span {
-  color: #c70017;
+  color: #c70000;
 }
 .footer_socials {
   display: -webkit-box;
@@ -678,7 +693,7 @@ h3 span {
   text-decoration: none;
 }
 .footer_socials a:hover i {
-  color: #c70017;
+  color: #c70000;
 }
 .footer_socials i {
   text-decoration: none;
@@ -726,7 +741,7 @@ h3 span {
 }
 @media (hover: hover) {
   .footer_contacts a span:hover {
-    border-bottom: 2px solid #c70017;
+    border-bottom: 2px solid #c70000;
   }
 }
 
