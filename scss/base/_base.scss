@@ -34,6 +34,7 @@ h2 {
     font-family: $second-family;
   }
 }
+
 h3 {
   color: $text-dark;
   font-size: 20px;
@@ -68,5 +69,50 @@ h3 {
 
   &:hover svg path {
     stroke: #403f3d;
+  }
+}
+
+.input {
+  gap: 8px;
+  height: 64px;
+  width: 400px;
+  border-radius: 5px;
+  color: $text-light;
+  background: $background-body;
+  padding: 20px;
+  transition: all 0.5s ease-out;
+  border: 1px solid $border-light;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  height: 64px;
+  width: 200px;
+  border-radius: 5px;
+  color: $text-light;
+  text-decoration: none;
+  background: $background-body;
+  text-align: center;
+  padding: 20px 78px;
+  border: none;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    color: $text-accent;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+
+  .btn {
+    width: 400px;
+    background: $background-body;
   }
 }

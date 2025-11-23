@@ -18,7 +18,8 @@
       content="WawStal - firma ślusarska, która łączy solidność z nowoczesnym designem"
     />
     <meta property="og:image" content="/assets/img/og.jpeg" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="./css/normalize.css" />
     <link
       rel="stylesheet"
@@ -83,7 +84,7 @@
               wyglądem. Pracujemy zarówno dla klientów indywidualnych, jak i
               firm, oferując fachowe doradztwo oraz kompleksową realizację.
             </div>
-            <a href="projects.html" class="enjoy_button menu-button link-text"
+            <a href="projects.html" class="btn"
               >Proekty</a
             >
           </div>
@@ -130,33 +131,21 @@
       <footer class="footer" id="footer">
         <div class="footer_wrapper">
           <div class="footer_column footer_column__left">
-            <h2 class="footer_title">
+<form class="form" id="contactForm">
+  <input class="input" type="text" name="name" placeholder="Imię" required>
+  <input class="input" type="email" name="email" placeholder="Email" required>
+    <input class="input" type="telephone" name="email" placeholder="Telefon" required>
+  <textarea class="input" name="message" placeholder="Wiadomość" required></textarea>
+  <button type="submit" class="btn">
+    Wyślij
+  </button>
+</form>
+          </div>
+          <div class="footer_column footer_column__right">
+                        <h2 class="footer_title">
               Masz pytania lub chcesz nawiązać współpracę?</br>
               <span>Skontaktuj się z nami!</span>
             </h2>
-            <div class="footer_socials">
-              <a
-                href="https://www.tiktok.com/@sergej.wasilewicz"
-                target="_blank"
-                class="social"
-                ><i class="fa-brands fa-tiktok fa-xl"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61550951706924&locale=pl_PL"
-                target="_blank"
-                class="social"
-                ><i class="fa-brands fa-facebook fa-xl"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/wawstal/"
-                target="_blank"
-                class="social"
-                ><i class="fa-brands fa-instagram fa-xl"></i>
-              </a>
-            </div>
-          </div>
-          <div class="footer_column footer_column__right">
-            <div class="footer_contact-us">Contact us</div>
             <div class="footer_contacts">
               <a
                 target="_blank"
@@ -181,10 +170,34 @@
                 <span>wawstal@gmail.com</span></a
               >
             </div>
+                        <div class="footer_contact-us">
+                          <div class="footer_socials">
+              <a
+                href="https://www.tiktok.com/@sergej.wasilewicz"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-tiktok fa-xl"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61550951706924&locale=pl_PL"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-facebook fa-xl"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/wawstal/"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+            </div>
+            </div>
           </div>
         </div>
       </footer>
     </div>
     <script src="./js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeV8RUsAAAAAIPE-BUPFJwxaAq7r12rus5cD4x1"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
