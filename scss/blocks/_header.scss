@@ -1,12 +1,14 @@
 .header {
   height: 120px;
   margin: 0;
+
   &_logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
+
   h1 {
     margin: 0;
     margin-top: 10px;
@@ -47,31 +49,6 @@
     padding: 0;
     column-gap: 40px;
   }
-
-  &_item {
-    border-bottom: 2px solid transparent;
-    transition: 0.5s all;
-
-    &:hover {
-      @media (hover: hover) {
-        border-bottom: 2px solid $text-accent;
-      }
-    }
-  }
-
-  .menu-link {
-    &_link {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      border-bottom: 2px solid transparent;
-      transition: 0.5s all;
-
-      &:hover {
-        border-bottom: 2px solid $text-accent;
-      }
-    }
-  }
 }
 
 .link-text {
@@ -81,4 +58,14 @@
   font-weight: 600;
   line-height: 150%;
   text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s all;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $text-accent;
+      border-bottom: 2px solid $text-accent;
+    }
+  }
 }

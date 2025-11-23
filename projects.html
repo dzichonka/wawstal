@@ -70,18 +70,18 @@
           <div class="header_nav">
             <ul class="header_list">
               <li class="header_item">
-                <a href="/index.html#about" class="nav_link link-text"
+                <a href="/index.html#about" class="link-text"
                   >O firmie</a
                 >
               </li>
               <li class="header_item">
-                <a href="#footer" class="nav_link link-text">Kontakt</a>
+                <a href="#footer" class="link-text">Kontakt</a>
               </li>
             </ul>
           </div>
           <div class="header_menu-link menu-link">
-            <a href="#" class="menu-link_link link-text">
-              <div class="menu-link_title link-text">Proekty</div>
+            <a href="#" class="link-text">
+Proekty
             </a>
           </div>
         </div>
@@ -107,27 +107,8 @@
             <div class="tab_content"></div>
           </div>
 
-          <div class="tab_refresh">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewbox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
-                stroke="#403F3D"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3"
-                stroke="#403F3D"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <div class="tab_refresh social">
+<i class="fa-solid fa-arrow-rotate-right"></i>
           </div>
         </div>
       </section>
@@ -135,33 +116,21 @@
       <footer class="footer" id="footer">
         <div class="footer_wrapper">
           <div class="footer_column footer_column__left">
-            <h2 class="footer_title">
-              Masz pytania lub chcesz nawiązać współpracę?
-              <span>Skontaktuj się z nami!</span>
-            </h2>
-            <div class="footer_socials">
-              <a
-                href="https://www.tiktok.com/@sergej.wasilewicz"
-                target="_blank"
-                class="social"
-                ><i class="fa-brands fa-tiktok fa-xl"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61550951706924&locale=pl_PL"
-                target="_blank"
-                class="social"
-                ><i class="fa-brands fa-facebook fa-xl"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/wawstal/"
-                target="_blank"
-                class="social"
-                ><i class="fa-brands fa-instagram fa-xl"></i>
-              </a>
-            </div>
+<form class="form" id="contactForm">
+  <input class="input" type="text" name="name" placeholder="Imię" required>
+  <input class="input" type="email" name="email" placeholder="Email" required>
+    <input class="input" type="tel" name="tel" placeholder="Telefon" required>
+  <textarea class="input" name="message" placeholder="Wiadomość" required></textarea>
+  <button type="submit" class="btn">
+    Wyślij
+  </button>
+</form>
           </div>
           <div class="footer_column footer_column__right">
-            <div class="footer_contact-us">Contact us</div>
+                        <h2 class="footer_title">
+              Masz pytania lub chcesz nawiązać współpracę?</br>
+              <span>Skontaktuj się z nami!</span>
+            </h2>
             <div class="footer_contacts">
               <a
                 target="_blank"
@@ -185,6 +154,28 @@
                 <i class="fa-solid fa-envelope fa-xl"></i>
                 <span>wawstal@gmail.com</span></a
               >
+            </div>
+                        <div class="footer_contact-us">
+                          <div class="footer_socials">
+              <a
+                href="https://www.tiktok.com/@sergej.wasilewicz"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-tiktok fa-xl"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61550951706924&locale=pl_PL"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-facebook fa-xl"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/wawstal/"
+                target="_blank"
+                class="social"
+                ><i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+            </div>
             </div>
           </div>
         </div>

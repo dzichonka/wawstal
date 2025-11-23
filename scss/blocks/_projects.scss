@@ -21,8 +21,6 @@
   }
 
   &_window {
-    // background: $background-body;
-    // border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,13 +88,6 @@
   }
 }
 
-.header {
-  &_menu-link__underline {
-    border-bottom: 1px solid $text-dark;
-    cursor: default;
-  }
-}
-
 .projects {
   margin-top: 20px;
 
@@ -140,16 +131,7 @@
   }
 
   &_refresh {
-    display: flex;
     margin: 40px auto 0 auto;
-    display: flex;
-    width: 60px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    border: 1px solid $border-dark;
-    cursor: pointer;
   }
 }
 

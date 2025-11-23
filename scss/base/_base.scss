@@ -43,10 +43,6 @@ h3 {
   p {
     font-size: 20px;
   }
-  span {
-    color: $text-accent;
-    font-family: $second-family;
-  }
 }
 
 .social {
@@ -56,19 +52,17 @@ h3 {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  border: 1px solid $border-light;
+  border: 2px solid $border-light;
+  color: $text-light;
   transition: 0.5s all;
+  cursor: pointer;
 
-  & svg path {
-    transition: 0.5s all;
-  }
-
-  &:hover {
-    background: $background-body;
-  }
-
-  &:hover svg path {
-    stroke: #403f3d;
+  @media (hover: hover) {
+    &:hover {
+      background: $background-body;
+      color: $text-accent;
+      border: 2px solid $text-accent;
+    }
   }
 }
 

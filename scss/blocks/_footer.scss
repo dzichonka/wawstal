@@ -14,7 +14,6 @@
   }
 
   &_column {
-    //min-width: 380px;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -80,15 +79,17 @@
       flex: 1;
       align-self: flex-start;
       text-decoration: none;
-      border-bottom: 2px solid transparent;
       transition: 0.8s all;
 
       span {
-        border-bottom: 2px solid transparent;
         transition: 0.8s all;
-        &:hover {
-          @media (hover: hover) {
-            border-bottom: 2px solid $text-accent;
+      }
+      &:hover {
+        @media (hover: hover) {
+          color: $text-accent;
+
+          svg path {
+            stroke: $text-accent;
           }
         }
       }

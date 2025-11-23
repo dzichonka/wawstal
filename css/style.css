@@ -46,10 +46,6 @@ h3 {
 h3 p {
   font-size: 20px;
 }
-h3 span {
-  color: #c70000;
-  font-family: "Architects Daughter", cursive;
-}
 
 .social {
   display: -webkit-box;
@@ -64,19 +60,18 @@ h3 span {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100px;
-  border: 1px solid #adb8c1;
+  border: 2px solid #adb8c1;
+  color: #c9d7e1;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+  cursor: pointer;
 }
-.social svg path {
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-.social:hover {
-  background: #11181f;
-}
-.social:hover svg path {
-  stroke: #403f3d;
+@media (hover: hover) {
+  .social:hover {
+    background: #11181f;
+    color: #c70000;
+    border: 2px solid #c70000;
+  }
 }
 
 .input {
@@ -203,31 +198,6 @@ h3 span {
      -moz-column-gap: 40px;
           column-gap: 40px;
 }
-.header_item {
-  border-bottom: 2px solid transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-@media (hover: hover) {
-  .header_item:hover {
-    border-bottom: 2px solid #c70000;
-  }
-}
-.header .menu-link_link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-.header .menu-link_link:hover {
-  border-bottom: 2px solid #c70000;
-}
 
 .link-text {
   color: #c2d3dc;
@@ -236,6 +206,16 @@ h3 span {
   font-weight: 600;
   line-height: 150%;
   text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+@media (hover: hover) {
+  .link-text:hover {
+    color: #c70000;
+    border-bottom: 2px solid #c70000;
+  }
 }
 
 .enjoy {
@@ -491,11 +471,6 @@ h3 span {
   cursor: pointer;
 }
 
-.header_menu-link__underline {
-  border-bottom: 1px solid #c2d3dc;
-  cursor: default;
-}
-
 .projects {
   margin-top: 20px;
 }
@@ -548,22 +523,7 @@ h3 span {
           justify-content: center;
 }
 .tab_refresh {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 40px auto 0 auto;
-  display: flex;
-  width: 60px;
-  height: 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 100px;
-  border: 1px solid #455358;
-  cursor: pointer;
 }
 
 .menu-card {
@@ -765,18 +725,19 @@ h3 span {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
   -webkit-transition: 0.8s all;
   transition: 0.8s all;
 }
 .footer_contacts a span {
-  border-bottom: 2px solid transparent;
   -webkit-transition: 0.8s all;
   transition: 0.8s all;
 }
 @media (hover: hover) {
-  .footer_contacts a span:hover {
-    border-bottom: 2px solid #c70000;
+  .footer_contacts a:hover {
+    color: #c70000;
+  }
+  .footer_contacts a:hover svg path {
+    stroke: #c70000;
   }
 }
 
